@@ -34,13 +34,6 @@
           <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-heart-fill me-2 text-danger"></i> Health <span class="badge bg-secondary float-end">0</span></a>
         </div>
 
-        <!-- Progress -->
-        <div class="mt-4">
-          <h6>Progress</h6>
-          <div class="progress-ring">0%</div>
-        </div>
-      </div>
-
       <!-- Main Section -->
       <div class="col-md-9">
         <!-- Add Task -->
