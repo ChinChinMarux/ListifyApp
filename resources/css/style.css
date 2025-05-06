@@ -1,0 +1,79 @@
+body {
+    background-color: #f9fafb;
+}
+
+.sidebar {
+    width: 250px;
+}
+
+.sidebar .list-group-item.active {
+    background-color: #fff7d6;
+    color: #000;
+    border: none;
+}
+
+.btn-add {
+    background-color: #d18d00;
+    color: white;
+}
+
+.btn-add:hover {
+    background-color: #b47400;
+}
+
+.filter-btn.active {
+    background-color: #fff7d6;
+    border-radius: 999px;
+}
+
+.progress-ring {
+    width: 100px;
+    height: 100px;
+    border: 6px solid #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d18d00;
+    margin: auto;
+    transform: rotate(-90deg);
+}
+.task-enter {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.task-enter-active {
+    transition: all 0.3s ease-out;
+    transform: translateY(0);
+    opacity: 1;
+}
+.task-exit {
+    opacity: 1;
+}
+.task-exit-active {
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.color-picker span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
